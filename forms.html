@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLA Way Retreat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <img class="brand-mark" src="images/bookmark.png" alt="Free Lunch Academy book mark logo" />
+        <img class="brand-wordmark" src="images/wordmark.png" alt="Free Lunch Academy wordmark" />
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="forms.html">Worksheets</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="forms.html#checkin">Check-In</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section" id="worksheets">
+      <div class="section-head">
+        <div>
+          <div class="accent-line"></div>
+          <h2>Interactive worksheets</h2>
+          <p>Each worksheet uses the same card layout, large labels, and lesson color cues so the digital experience and printed materials feel fully aligned.</p>
+        </div>
+      </div>
+      <div class="forms-grid">
+        <div class="worksheet-shell green panel">
+          <h3>Mixed Signals Worksheet</h3>
+          <p>For Emotional Communication</p>
+          <form id="emotionalWorksheet" class="form-grid">
+            <div>
+              <label for="commFormat">Communication format</label>
+              <input id="commFormat" name="communication_format" class="field" placeholder="Text, DM, email, voice note, face to face" />
+            </div>
+            <div>
+              <label for="messyVersion">Round 1: mixed signal version</label>
+              <textarea id="messyVersion" name="mixed_signal_version" placeholder="Write the unclear or emotionally charged version"></textarea>
+            </div>
+            <div>
+              <label for="emotionTrigger">Emotion or trigger noticed</label>
+              <textarea id="emotionTrigger" name="emotion_trigger" placeholder="What emotion was activated and why?"></textarea>
+            </div>
+            <div>
+              <label for="receiverImpact">Receiver impact</label>
+              <textarea id="receiverImpact" name="receiver_impact" placeholder="How might the other person feel reading or hearing this?"></textarea>
+            </div>
+            <div>
+              <label for="clearRemix">Round 2: clear communication remix</label>
+              <textarea id="clearRemix" name="clear_remix" placeholder="Rewrite the message with clarity and emotional regulation"></textarea>
+            </div>
+            <div>
+              <label for="commTakeaway">One takeaway</label>
+              <textarea id="commTakeaway" name="takeaway" placeholder="What improved understanding?"></textarea>
+            </div>
+          </form>
+          <div class="actions">
+            <button type="button" class="primary" id="saveEmotional">Save on this device</button>
+            <button type="button" class="secondary" id="copyEmotional">Copy responses</button>
+          </div>
+          <div id="emotionalStatus" class="form-status"></div>
+        </div>
+        <div class="worksheet-shell burgundy panel">
+          <h3>Mirror Moves Worksheet</h3>
+          <p>For Self-Awareness & Social Awareness</p>
+          <form id="awarenessWorksheet" class="form-grid">
+            <div>
+              <label for="actionPrompt">Action prompt</label>
+              <input id="actionPrompt" name="action_prompt" class="field" placeholder="What prompt did you draw?" />
+            </div>
+            <div>
+              <label for="feltEmotion">What emotion did I feel?</label>
+              <textarea id="feltEmotion" name="felt_emotion" placeholder="Name the first emotion you noticed"></textarea>
+            </div>
+            <div>
+              <label for="bodySignal">What body signal showed up?</label>
+              <textarea id="bodySignal" name="body_signal" placeholder="Heart rate, tension, breath, posture, etc."></textarea>
+            </div>
+            <div>
+              <label for="judgmentConcern">Was I worried about judgment?</label>
+              <textarea id="judgmentConcern" name="judgment_concern" placeholder="Describe any concern about how others saw you"></textarea>
+            </div>
+            <div>
+              <label for="assumptionMade">What assumptions did I make about others?</label>
+              <textarea id="assumptionMade" name="assumption_made" placeholder="What story did you tell yourself about the room?"></textarea>
+            </div>
+            <div>
+              <label for="authenticityTakeaway">Authenticity takeaway</label>
+              <textarea id="authenticityTakeaway" name="authenticity_takeaway" placeholder="What felt authentic and what felt performed?"></textarea>
+            </div>
+          </form>
+          <div class="actions">
+            <button type="button" class="primary" id="saveAwareness">Save on this device</button>
+            <button type="button" class="secondary" id="copyAwareness">Copy responses</button>
+          </div>
+          <div id="awarenessStatus" class="form-status"></div>
+        </div>
+        <div class="worksheet-shell gold panel">
+          <h3>Pressure Points Worksheet</h3>
+          <p>For Pressure Points</p>
+          <form id="pressureWorksheet" class="form-grid">
+            <div>
+              <label for="speedPattern">My speed-round pattern</label>
+              <input id="speedPattern" name="speed_pattern" class="field" placeholder="Reactor, Avoider, Strategist, Social Scanner" />
+            </div>
+            <div>
+              <label for="pressureShift">What changed when I slowed down?</label>
+              <textarea id="pressureShift" name="pressure_shift" placeholder="Compare pressured answers to calmer answers"></textarea>
+            </div>
+            <div>
+              <label>What showed up in the challenge?</label>
+              <div class="checkboxes">
+                <label><input type="checkbox" name="challenge_pattern" value="Rushed" />Rushed</label>
+                <label><input type="checkbox" name="challenge_pattern" value="Froze" />Froze</label>
+                <label><input type="checkbox" name="challenge_pattern" value="Strategized" />Strategized</label>
+                <label><input type="checkbox" name="challenge_pattern" value="Copied others" />Copied others</label>
+                <label><input type="checkbox" name="challenge_pattern" value="Adapted" />Adapted</label>
+              </div>
+            </div>
+            <div>
+              <label for="pressureHelp">Which pressure habits help me?</label>
+              <textarea id="pressureHelp" name="pressure_help" placeholder="Name the habits that actually support you"></textarea>
+            </div>
+            <div>
+              <label for="pressureHurt">Which habits hurt me?</label>
+              <textarea id="pressureHurt" name="pressure_hurt" placeholder="Name the habits that make things harder"></textarea>
+            </div>
+            <div>
+              <label for="nextStrategy">Next-time strategy</label>
+              <textarea id="nextStrategy" name="next_strategy" placeholder="What pause or regulation move will you use next time?"></textarea>
+            </div>
+          </form>
+          <div class="actions">
+            <button type="button" class="primary" id="savePressure">Save on this device</button>
+            <button type="button" class="secondary" id="copyPressure">Copy responses</button>
+          </div>
+          <div id="pressureStatus" class="form-status"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="checkin">
+      <div class="section-head">
+        <div>
+          <div class="accent-line"></div>
+          <h2>Participant check-in</h2>
+          <p>Use this form for arrival check-in, cohort grouping, or end-of-day reflection in one simple place.</p>
+        </div>
+      </div>
+      <div class="form-card">
+        <form id="checkinForm" class="form-grid two">
+          <div>
+            <label for="checkinName">Name</label>
+            <input id="checkinName" name="name" class="field" placeholder="Participant name" />
+          </div>
+          <div>
+            <label for="checkinEmail">Email</label>
+            <input id="checkinEmail" name="email" class="field" type="email" placeholder="name@example.com" />
+          </div>
+          <div>
+            <label for="checkinRole">Role / Team</label>
+            <input id="checkinRole" name="role_team" class="field" placeholder="Teaching artist, admin, cohort, team" />
+          </div>
+          <div>
+            <label for="checkinNeed">What do you need from this retreat?</label>
+            <input id="checkinNeed" name="retreat_need" class="field" placeholder="Clarity, connection, practical tools, reflection" />
+          </div>
+          <div style="grid-column:1 / -1;">
+            <label for="checkinArrival">How are you arriving today?</label>
+            <textarea id="checkinArrival" name="arrival_state" placeholder="Name your energy, stress level, or mindset as you enter the room"></textarea>
+          </div>
+        </form>
+        <div class="actions">
+          <button type="button" class="primary" id="saveCheckin">Save on this device</button>
+          <button type="button" class="secondary" id="copyCheckin">Copy responses</button>
+        </div>
+        <div id="checkinStatus" class="form-status"></div>
+      </div>
+    </section>
+</main>
+
+  <footer class="footer container">
+    <div class="footer-box">
+      <h3>FLA Way Retreat</h3>
+      <p class="disclaimer">This activity space is designed for reflection, learning, and discussion. The Pressure Profile quiz is for workshop reflection only and is not a psychological diagnosis or clinical assessment.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

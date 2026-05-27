@@ -1,0 +1,1 @@
+Upload all files in this folder to your GitHub repo root. Then enable GitHub Pages from main branch / root. Replace form sections with Google Forms later if desired.
